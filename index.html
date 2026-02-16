@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: 'Georgia', serif;
-            background: linear-gradient(to right, #fdf6f0, #fbeee6); /* Pink background restored */
+            background: linear-gradient(to right, #fdf6f0, #fbeee6); /* Pink background  */
             color: #4a3f35;
             display: flex;
             justify-content: center;
@@ -17,12 +17,14 @@
         }
 
         .container {
-            background-color: #e5e5e5; /* Grey container instead of white */
-            padding: 40px;
+            background-color: #e5e5e5; /* Grey container */
+            padding: 30px;
             max-width: 700px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
+            max-height: 90vh; 
+            overflow-y: auto; /
         }
 
         h1 {
@@ -39,6 +41,8 @@
 
         img {
             width: 100%;
+            max-height: 180px; /* limits height so it fits on screen */
+            object-fit: cover;  
             border-radius: 12px;
             margin: 20px 0;
         }
